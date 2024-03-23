@@ -1,6 +1,7 @@
 "use client";
 
-import { ChevronDown, ChevronRight, Mail, Menu, MoveUpRight, Play, X, Instagram, Dribbble, Twitter, Youtube } from "lucide-react";
+import { Header } from "@/components/Header";
+import { ChevronDown, Mail, Menu, MoveUpRight, Play, X, Instagram, Dribbble, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -12,92 +13,8 @@ export default function Home() {
 	};
 
 	return (
-		<main className=" max-w-[400px] mx-auto">
-			{isOpen && <div className="fixed inset-0 z-30 bg-black opacity-50" onClick={toggleMenu}></div>}
-			<nav className="absolute z-10 px-6 mt-10 w-dvw max-w-[400px]">
-				<div className="flex items-center justify-between">
-					<div>
-						<a href="#" className="text-xl font-bold text-white">
-							Ngukir
-						</a>
-					</div>
-					<div className="md:hidden">
-						{/* Mobile Menu Button */}
-						<button onClick={toggleMenu}>
-							<Menu size={24} color="white" />
-						</button>
-					</div>
-				</div>
-				{/* Mobile Menu (Hidden by default) */}
-				<nav className={`transition-opacity ${isOpen ? "fixed opacity-1" : "hidden opacity-0"} h-dvh w-max z-50 top-0 bg right-0 bg-gradient-to-tl bg-zinc-900 to-transparent  p-10 md:hidden `}>
-					<div className="flex flex-col justify-center h-full items-left w-max ">
-						<a onClick={toggleMenu} className="block py-3 text-white ">
-							Home
-						</a>
-						<a onClick={toggleMenu} className="block py-3 text-white">
-							Service
-						</a>
-						<a onClick={toggleMenu} className="block py-3 text-white">
-							Project
-						</a>
-					</div>
-				</nav>
-			</nav>
-			{/* hero section */}
-			<header className=" bg-hero-img h-[750px] bg-center bg-cover px-6 relative">
-				<div className="container">
-					<div className="grid grid-cols-12">
-						<div className="col-span-full mt-28">
-							<h1 className=" text-white text-5xl font-medium leading-[68px]">
-								The greatest <br className=" md:hidden" /> Architecture
-							</h1>
-						</div>
-						<div className="flex items-center justify-center col-span-1 row-span-3 p-2">
-							<div className=" w-[1px] bg-gradient-to-b to-white from-transparent h-[230px]"></div>
-						</div>
-						<div className="col-start-3 col-span-full mt-6 text-white text-opacity-[0.85] text-base leading-relaxed">
-							<p>
-								Architecture important for our future. Find your dream Architecture <span className="text-white ">easily</span> and <span className="text-white ">safely</span> here.
-							</p>
-						</div>
-						<div className="col-start-3 mt-6 cursor-pointer col-span-full">
-							<a className="inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-white bg-blue-500 ">Get in Touch</a>
-						</div>
-						<div className="row-start-5 pl-1 mt-4 col-span-full">
-							<div className="flex gap-3 cursor-pointer animate-bounce">
-								<div className="flex items-center justify-center bg-white rounded-full h-fit ">
-									<ChevronDown color="black" size={24} />
-								</div>
-								<div className="flex flex-col">
-									<p className="text-xs font-medium text-white ">Explore More</p>
-									<p className="text-white text-opacity-80 text-[10px] font-normal tracking-wide">Scroll down</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				{/* decoration */}
-				<div className="absolute bottom-0 right-0 grid grid-cols-12 h-[112px] w-dvw max-w-[400px] text-center">
-					<div className=" col-start-6 col-span-full flex justify-center items-center bg-white bg-opacity-5 backdrop-blur-[20px] ring-inset ring-2 ring-white ring-opacity-5 min-h-14 ">
-						<p className="text-xs font-medium text-center text-white ">Our Customers</p>
-					</div>
-					<div className="row-start-2 col-span-5 bg-white bg-opacity-5 backdrop-blur-[20px] ring-inset ring-2 ring-white ring-opacity-5 flex justify-center items-center min-h-14">
-						<p className="text-xs font-medium text-center text-white ">Project Completed</p>
-					</div>
-					<div className="flex flex-col items-center justify-center col-span-7 row-start-2 bg-white min-h-14">
-						<div className="flex flex-row items-center justify-center gap-2">
-							<div className="flex flex-col">
-								<p className="text-xs font-medium text-[#1B1F29] ">About us</p>
-								<p className=" text-[#1B1F29] text-opacity-80 text-[10px] font-normal tracking-wide w-max">View our story</p>
-							</div>
-							<div className="flex items-center justify-center p-1 bg-[#1B1F29] rounded-full">
-								<Play size={12} fill="white" stroke="white" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
+		<main className="mx-auto">
+			<Header />
 			{/* second secion */}
 			<section className="mt-14">
 				<div className="container">
