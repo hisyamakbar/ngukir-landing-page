@@ -8,7 +8,7 @@ import { ChevronDown, Play } from "lucide-react";
 
 export const Header = () => {
 	return (
-		<header className=" bg-black-img h-[744px] bg-center bg-cover px-[35px] relative md:h-[504px] md:px-[70px] lg:h-[744px] lg:px-[120px]">
+		<header className=" bg-black-img h-[744px] bg-center bg-cover px-[35px] relative md:h-[504px] md:px-[70px] lg:h-[744px] lg:px-[120px] mb-14">
 			{/* BG Image*/}
 			<div className="-z-10 overflow-hidden w-full h-full absolute left-0 top-0 after:absolute after:inset-0 after:bg-gradient-to-r from-[#0000007a]">
 				<Image
@@ -21,7 +21,6 @@ export const Header = () => {
 						objectPosition: "center",
 					}}
 				/>
-				{/* <div className="absolute top-0 left-0 size-96 bg-red-500 blur-[450px]"></div> */}
 			</div>
 			{/* End of BG Image */}
 			<Navbar ClassName="flex items-center justify-between pt-10 mb-10 md:mb-14 bg-gradient-to-b" />
@@ -34,7 +33,7 @@ export const Header = () => {
 					<div className=" w-[1px] bg-gradient-to-b to-white from-transparent h-[216px] md:h-[280px] lg:h-[376px]"></div>
 				</div>
 				{/* End of Line Decoration */}
-				<div className="flex max-w-80 flex-col col-span-3 row-span-2 gap-6 md:col-start-3 md:lg:max-w-full md:col-span-5 lg:col-start-3 lg:col-span-5 lg:gap-8">
+				<div className="flex flex-col col-span-3 row-span-2 gap-6 max-w-80 md:col-start-3 md:lg:max-w-full md:col-span-5 lg:col-start-3 lg:col-span-5 lg:gap-8">
 					<p className="text-white text-opacity-[0.5] text-base leading-relaxed lg:text-lg lg:leading-8">
 						Architecture important for our future. Find your dream Architecture <span className="text-white ">easily</span> and <span className="text-white ">safely</span> here.
 					</p>
