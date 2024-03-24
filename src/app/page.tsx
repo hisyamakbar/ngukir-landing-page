@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 
-import Image from "next/image";
 import { Header } from "@/components/Header";
 import { OurService } from "@/components/OurService";
+import { WhoWeAre } from "@/components/WhoWeAre";
 
 import { ChevronDown, Mail, MoveUpRight, Play, X, Instagram, Dribbble, Twitter, Youtube } from "lucide-react";
 
@@ -21,42 +21,7 @@ export default function Home() {
 			{/* second secion */}
 			<OurService />
 			{/* thrid section */}
-			<div className="container">
-				<div className="grid grid-cols-12 px-6 bg-[#1B1F29] py-14">
-					<div className="flex gap-3 col-span-full">
-						<p className="text-xs font-semibold text-white">03</p>
-						<div className="flex items-center justify-center">
-							<div className=" w-[12px] bg-white  h-px"></div>
-						</div>
-						<p className="text-xs font-normal tracking-wide text-white">Who We Are</p>
-					</div>
-					{/* heading */}
-					<div className="mt-3 col-span-full">
-						<p className="text-3xl text-white font-medium leading-[46px]">We are your best Architecture</p>
-					</div>
-					{/* decoration line */}
-					<div className="flex items-center justify-center col-span-1 row-span-3 mt-6 ">
-						<div className=" w-[1px] bg-gradient-to-b to-white from-transparent h-[140px]"></div>
-					</div>
-					{/* content 1 */}
-					<div className="flex flex-col items-start justify-start col-start-3 row-span-3 gap-4 mt-6 col-span-full ">
-						<p className="text-sm leading-7 text-white text-opacity-80 texts">We have been trusted by many big companies in the world. We have built hundreds of buildings.</p>
-					</div>
-					{/* scroll down */}
-					<div className="row-start-auto pl-1 mt-4 col-span-full">
-						<div className="flex gap-3 cursor-pointer animate-bounce">
-							<div className="flex items-center justify-center bg-white rounded-full h-fit ">
-								<ChevronDown color="black" size={24} />
-							</div>
-							<div className="flex flex-col">
-								<p className="text-xs font-medium text-white ">Explore More</p>
-								<p className="text-white text-opacity-80 text-[10px] font-normal tracking-wide">Scroll down</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<Image src="/images/03-img.jpg" alt="hero" width={1920} height={1080} />
-			</div>
+			<WhoWeAre />
 			{/* fourth section */}
 			<section className="mt-14">
 				<div className="container">
@@ -81,7 +46,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-
 			{/* Footer */}
 			<footer>
 				<div className="container">

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const OurService = () => {
 	return (
-		<section id="our-service" className="grid grid-cols-4 px-[35px] gap-x-4 py-4 md:grid-cols-8 items-center md:px-[70px] lg:px-[120px]">
+		<section id="our-service" className="grid grid-cols-4 px-[35px] gap-x-4 py-4 md:grid-cols-8 items-center md:px-[70px] lg:px-[120px] mb-14">
 			<div className="mb-4 col-span-full md:col-span-4 md:mb-0">
 				{/* text */}
 				<div className="flex gap-3 mb-2 col-span-full md:col-span-4 md:mb-3">
@@ -53,7 +53,7 @@ export const OurService = () => {
 						objectPosition: "center",
 					}}
 				/>
-				<div className="bottom-0 left-0 grid content-end h-full grid-cols-12 bg-center bg-cover col-span-full">
+				<div className="grid content-end h-full grid-cols-12">
 					{/* text 1 */}
 					<div className="flex items-center col-span-7 px-4 bg-[#1B1F29] justify-center h-[72px] md:col-span-7 lg:h-[120px] lg:col-span-6 ">
 						<p className=" font-normal leading-3 text-white text-opacity-80 lg:text-sm lg:leading-6 text-[10px]">We pay attention to create positive impacts on the climate and natural environment.</p>
