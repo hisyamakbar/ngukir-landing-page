@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Header } from "@/components/Header";
 import { OurService } from "@/components/OurService";
 import { WhoWeAre } from "@/components/WhoWeAre";
+import { Project } from "@/components/Project";
 
 import { ChevronDown, Mail, MoveUpRight, Play, X, Instagram, Dribbble, Twitter, Youtube } from "lucide-react";
 
@@ -23,29 +24,7 @@ export default function Home() {
 			{/* thrid section */}
 			<WhoWeAre />
 			{/* fourth section */}
-			<section className="mt-14">
-				<div className="container">
-					<div className="grid grid-cols-12 px-6">
-						<div className="flex gap-3 col-span-full">
-							<p className="text-xs font-semibold text-zinc-800">04</p>
-							<div className="flex items-center justify-center">
-								<div className=" w-[12px] bg-zinc-800  h-px"></div>
-							</div>
-							<p className="text-xs font-normal tracking-wide text-zinc-800">Project</p>
-						</div>
-						{/* heading */}
-						<div className="mt-3 col-span-full">
-							<p className=" text-3xl text-zinc-800 font-medium leading-[46px]">The best project that we’ve completed</p>
-						</div>
-						<div className="flex flex-col items-start justify-start row-span-3 gap-4 mt-4 col-span-full ">
-							<p className="text-sm leading-7 text-zinc-800 text-opacity-80 texts">We have completed hundreds of projects. Client satisfaction is our priority. We always give our best.</p>
-						</div>
-						<a href="#" className="items-center py-4 mt-4 text-center text-white bg-blue-500 col-span-full px-9">
-							See More
-						</a>
-					</div>
-				</div>
-			</section>
+			<Project />
 			{/* Footer */}
 			<footer>
 				<div className="container">

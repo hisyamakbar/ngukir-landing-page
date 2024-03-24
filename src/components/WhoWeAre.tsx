@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 
 export const WhoWeAre = () => {
 	return (
-		<section id="who-we-are" className=" md:grid md:grid-cols-8 bg-[#1B1F29]">
+		<section id="who-we-are" className=" md:grid md:grid-cols-8 bg-[#1B1F29] mb-14">
 			<div className="col-span-4 order-2 px-[35px] md:px-[70px] lg:px-[120px] py-14 self-center">
 				{/* text */}
 				<div className="flex gap-3 mb-2 col-span-full md:col-span-4 md:mb-3">
