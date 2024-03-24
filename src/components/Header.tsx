@@ -1,13 +1,30 @@
 import React from "react";
-
-import { ChevronDown, Play } from "lucide-react";
+import Image from "next/image";
 
 import { Navbar } from "./Navbar";
 
+import heroImage from "../../public/images/heroImage.jpg";
+import { ChevronDown, Play } from "lucide-react";
+
 export const Header = () => {
 	return (
-		<header className=" bg-hero-img h-[744px] bg-center bg-cover px-[35px] relative md:h-[504px] md:px-[70px] lg:h-[744px] lg:px-[120px]">
-			<Navbar ClassName="flex items-center justify-between pt-10 mb-10 md:mb-14" />
+		<header className=" bg-black-img h-[744px] bg-center bg-cover px-[35px] relative md:h-[504px] md:px-[70px] lg:h-[744px] lg:px-[120px]">
+			{/* BG Image*/}
+			<div className="-z-10 overflow-hidden w-full h-full absolute left-0 top-0 after:absolute after:inset-0 after:bg-gradient-to-r from-[#0000007a]">
+				<Image
+					alt="hero image"
+					src={heroImage}
+					fill
+					quality={100}
+					style={{
+						objectFit: "cover",
+						objectPosition: "center",
+					}}
+				/>
+				{/* <div className="absolute top-0 left-0 size-96 bg-red-500 blur-[450px]"></div> */}
+			</div>
+			{/* End of BG Image */}
+			<Navbar ClassName="flex items-center justify-between pt-10 mb-10 md:mb-14 bg-gradient-to-b" />
 			<div className="grid grid-cols-4 md:grid-cols-8 gap-x-4 lg:grid-cols-12 lg:gap-x-8 md:gap-x-4">
 				<h1 className="col-span-full text-white text-5xl font-medium leading-[68px] md:col-start-2 md:col-span-full lg:text-7xl lg:leading-[102px] mb-2">
 					The greatest <br className=" md:block" /> Architecture
@@ -26,7 +43,7 @@ export const Header = () => {
 					</a>
 				</div>
 				{/* Scroll Down  */}
-				<div className="mt-2 col-span-full ml-[7dvw] row-start-auto md:ml-[3dvw] lg:ml-[2dvw] lg:mt-4">
+				<a href="#our-service" className="mt-2 col-span-full ml-[7dvw] row-start-auto md:ml-[3dvw] lg:ml-[2dvw] lg:mt-4">
 					<div className="flex gap-3 cursor-pointer animate-bounce">
 						<div className="flex items-center justify-center bg-white rounded-full size-6">
 							<ChevronDown color="black" size={16} />
@@ -36,7 +53,7 @@ export const Header = () => {
 							<p className="text-white text-opacity-80 text-[10px] font-normal tracking-wide lg:text-xs">Scroll down</p>
 						</div>
 					</div>
-				</div>
+				</a>
 				{/* End of Scroll Down */}
 			</div>
 

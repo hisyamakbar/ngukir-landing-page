@@ -16,7 +16,7 @@ export default function Home() {
 		<main className="mx-auto">
 			<Header />
 			{/* second secion */}
-			<section className="mt-14">
+			<section id="our-service" className="mt-14">
 				<div className="container">
 					<div className="grid grid-cols-12 px-6">
 						<div className="flex gap-3 col-span-full">
