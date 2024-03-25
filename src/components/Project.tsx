@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react";
 
 export const Project = () => {
 	return (
-		<section className="py-4 px-[35px] md:px-[70px] lg:px-[120px] grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 relative">
+		<section className="py-4 px-[35px] md:px-[70px] lg:px-[120px] grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 items-center mb-14">
 			<div className="flex flex-col col-span-4 gap-3 mb-3 lg:col-span-6 md:col-span-full">
 				<div className="flex gap-3">
 					<p className="text-xs font-semibold text-zinc-800">04</p>
@@ -39,9 +39,15 @@ export const Project = () => {
 						objectPosition: "center",
 					}}
 				/>
-				<div className="grid content-end h-full grid-cols-12">
+				<div className="grid items-end content-between h-full grid-cols-12">
+					{/* text content */}
+					<div className="col-start-2 w-52 col-span-full pt-14 lg:w-96 md:w-80">
+						<p className="text-sm font-normal leading-7 text-zinc-300 lg:text-base">
+							We help our clients realize what he <span className="font-medium text-white">dreams</span> of. We <span className="font-medium text-white">always</span> give the best for our clients.
+						</p>
+					</div>
 					{/* text 1 */}
-					<div className="col-span-5 bg-white bg-opacity-5 backdrop-blur-[20px] ring-inset ring-2 ring-white ring-opacity-5 flex justify-center items-center row-span-2 lg:col-span-4">
+					<div className="col-span-5 bg-white bg-opacity-5 backdrop-blur-[20px] ring-inset ring-2 ring-white ring-opacity-5 flex justify-center items-center row-span-2 lg:col-span-4 h-[72px]">
 						<div className="flex flex-col items-start lg:flex-row">
 							{/* line */}
 							<div className="flex items-center justify-center gap-2">
